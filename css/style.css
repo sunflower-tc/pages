@@ -30,5 +30,18 @@ body {
     height: 5rem;
     background-image: url("../img/video.png");
     background-size: 100% 100%; }
+  .content_box .cs_list {
+    margin-top: 0.4rem;
+    background: pink;
+    height: 7rem; }
+    .content_box .cs_list ul > li {
+      float: left;
+      width: 4.55rem;
+      height: 5.2rem;
+      background: olivedrab;
+      margin-bottom: 0.3rem;
+      border-radius: 6px; }
+    .content_box .cs_list ul li:nth-child(odd) {
+      margin-right: 0.3rem; }
 
 /*# sourceMappingURL=style.css.map */

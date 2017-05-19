@@ -43,6 +43,22 @@ body{
       background-size:100% 100%;
 
     }
+    .cs_list{
+      margin-top:pxToRem(40px);
+      background: pink;
+      height:pxToRem(700px);
+      ul>li{
+        float: left;
+        width:pxToRem(455px);
+        height:pxToRem(520px);
+        background: olivedrab;
+        margin-bottom: pxToRem(30px);
+        border-radius: 6px;
+      }
+      ul li:nth-child(odd){
+        margin-right:pxToRem(30px);
+      }
+    }
   }
 
 
