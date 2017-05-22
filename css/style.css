@@ -35,8 +35,8 @@ body {
     .content_box .cs_list ul > li {
       float: left;
       width: 4.55rem;
-      height: 5.2rem;
-      background: olivedrab;
+      height: 4.75rem;
+      background: #fff;
       margin-bottom: 0.3rem;
       border-radius: 6px; }
     .content_box .cs_list ul li:nth-child(odd) {
