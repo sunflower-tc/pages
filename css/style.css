@@ -31,9 +31,7 @@ body {
     background-image: url("../img/video.png");
     background-size: 100% 100%; }
   .content_box .cs_list {
-    margin-top: 0.4rem;
-    background: pink;
-    height: 7rem; }
+    margin-top: 0.4rem; }
     .content_box .cs_list ul > li {
       float: left;
       width: 4.55rem;
