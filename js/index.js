@@ -95,7 +95,7 @@ function sendWbsocket() {
 
 }
 //发送
-function  myOpenHandler(e){
+function myOpenHandler(e){
     sock.send('test');
 }
 //返回事件

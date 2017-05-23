@@ -2,6 +2,7 @@
 
 $bodyColor: #e9e9e9;
 $FontSize: 12px;
+$FontColor:#333;
 @function pxToRem($px) {
   @return $px / 100px * 1rem;
 }
@@ -16,6 +17,7 @@ $FontSize: 12px;
 body {
   font-family: 'pingfang';
   background: $bodyColor;
+  color:$FontColor;
   .show_video {
     display: block;
   }
@@ -138,6 +140,55 @@ body {
     }
   }
 }
+.wait_content{
+  width:100%;
+  height:100%;
+  .header_avatar{
+      width:100%;
+      height:pxToRem(500px);
+      margin-top:2.5rem;
+    .cs_avatar {
+      width: pxToRem(450px);
+      height: pxToRem(450px);
+      margin: 0 pxToRem(100px);
+      float:left;
+      img{
+        border-radius: 5px;
+        width:100%;
+        height:100%;
+      }
+    }
+    .cs_status{
+      float:left;
+      padding:pxToRem(100px) 0;
+      .name{
+        font-size:20px;
+        margin-bottom:pxToRem(15px);
+      }
+    }
+  }
+  .video_bottom{
+    position: absolute;
+    bottom:0;
+    width:100%;
+    height:pxToRem(750px);
+    img{
+      position: absolute;
+      left:50%;
+      margin-left:pxToRem(-200px);
+      width:pxToRem(400px);
+      height:pxToRem(400px);
+    }
+    .cancel{
+      margin-top:pxToRem(450px);
+      text-align: center;
+      font-size:14px;
+    }
+
+  }
+
+}
+
 
 
 
