@@ -146,7 +146,7 @@ body {
   .header_avatar{
       width:100%;
       height:pxToRem(500px);
-      margin-top:2.5rem;
+      margin-top:pxToRem(220px);
     .cs_avatar {
       width: pxToRem(450px);
       height: pxToRem(450px);
@@ -164,7 +164,9 @@ body {
       margin-top:pxToRem(100px);
       .name{
         font-size:20px;
-        margin-bottom:pxToRem(20px);
+      }
+      .status{
+        margin-top:pxToRem(20px);
       }
     }
   }

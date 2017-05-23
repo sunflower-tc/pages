@@ -115,7 +115,7 @@ body {
   .wait_content .header_avatar {
     width: 100%;
     height: 5rem;
-    margin-top: 2.5rem; }
+    margin-top: 2.2rem; }
     .wait_content .header_avatar .cs_avatar {
       width: 4.5rem;
       height: 4.5rem;
@@ -130,8 +130,9 @@ body {
       height: 2.5rem;
       margin-top: 1rem; }
       .wait_content .header_avatar .cs_status .name {
-        font-size: 20px;
-        margin-bottom: 0.2rem; }
+        font-size: 20px; }
+      .wait_content .header_avatar .cs_status .status {
+        margin-top: 0.2rem; }
   .wait_content .video_bottom {
     position: absolute;
     bottom: 0;
