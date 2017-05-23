@@ -78,6 +78,7 @@ var sock,
     isOnline=true;//客服是否在线
 
 function sendWbsocket() {
+    window.location.href="wait-video.html";
     sock = new SockJS('http://123.57.227.23:9080/alerm');
     sock.onopen = function (e) {
         console.log('open1');
