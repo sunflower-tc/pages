@@ -160,10 +160,11 @@ body {
     }
     .cs_status{
       float:left;
-      padding:pxToRem(100px) 0;
+      height: pxToRem(250px);
+      margin-top:pxToRem(100px);
       .name{
         font-size:20px;
-        margin-bottom:pxToRem(15px);
+        margin-bottom:pxToRem(20px);
       }
     }
   }

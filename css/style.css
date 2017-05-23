@@ -127,10 +127,11 @@ body {
         height: 100%; }
     .wait_content .header_avatar .cs_status {
       float: left;
-      padding: 1rem 0; }
+      height: 2.5rem;
+      margin-top: 1rem; }
       .wait_content .header_avatar .cs_status .name {
         font-size: 20px;
-        margin-bottom: 0.15rem; }
+        margin-bottom: 0.2rem; }
   .wait_content .video_bottom {
     position: absolute;
     bottom: 0;
