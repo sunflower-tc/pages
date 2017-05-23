@@ -1,11 +1,12 @@
+
 /**
  * Created by sunflower on 2017/5/17.
  */
-var coverOthers=$('#poster,.icon_video,.cover');
-    myVideo=document.getElementById("adv_video"),
-    icon=document.getElementsByClassName('icon_video'),
-    cover=document.getElementsByClassName('cover');
+//播放视频
 
+
+var coverOthers=$('#poster,.icon_video,.cover');
+myVideo=document.getElementById("adv_video");
 var currentTime,total;
 $('.video_box').click(function(e){
     console.log('click video box')
@@ -17,7 +18,6 @@ $('.video_box').click(function(e){
 myVideo.onclick=function(e){
     console.log('come in video')
     if(myVideo.paused){
-
         console.log('pause in video')
         play();
     }else{
@@ -54,4 +54,58 @@ myVideo.addEventListener("timeupdate", function(){
 });
 
 
+//点击chat 发送websocket
+ function sendWbsocket1() {
+     console.log('click send websocket');
+    var wsAddr = "ws://echo.websocket.org/";
+    var ws = new WebSocket(wsAddr);
+    ws.onopen = function () {
+        ws.send('RCtcat test websocket');
+    };
+    ws.onmessage = function (evt) {
+        console.log('get data', evt.data);
+        ws.close();
+    };
+    ws.onclose = function (evt) {
+        console.log('websocket close');
+    };
+    ws.onerror = function (evt) {
+        console.log('webscoket error');
+    };
 
+ }
+var sock,
+    isOnline=true;//客服是否在线
+
+function sendWbsocket() {
+    sock = new SockJS('http://123.57.227.23:9080/alerm');
+    sock.onopen = function (e) {
+        console.log('open1');
+        myOpenHandler(e)
+    };
+    //返回事件
+    sock.onmessage = function (e) {
+        myMessageHandler(e)
+    };
+    sock.onclose = function (e) {
+        console.log('close');
+        myCloseHandler(e)
+    };
+
+
+}
+//发送
+function  myOpenHandler(e){
+    sock.send('test');
+}
+//返回事件
+function myMessageHandler(e){
+    console.log('message', e.data);
+    if(isOnline){
+        window.location.href="wait-video.html";
+    }
+    sock.close();
+}
+function  myCloseHandler(e){
+    console.log("On close event has been called: " ,e);
+}

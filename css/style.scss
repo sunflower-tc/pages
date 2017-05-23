@@ -1,139 +1,143 @@
 @import "myreset.css";
-$bodyColor:#e9e9e9;
-$FontSize:12px;
+
+$bodyColor: #e9e9e9;
+$FontSize: 12px;
 @function pxToRem($px) {
   @return $px / 100px * 1rem;
 }
+
 @font-face {
   font-family: 'pingfang';
-  src:url('../PingFang ExtraLight.ttf');
+  src: url('../PingFang ExtraLight.ttf');
   font-weight: normal;
   font-style: normal;
 }
-body{
+
+body {
   font-family: 'pingfang';
   background: $bodyColor;
-  .show_video{
+  .show_video {
     display: block;
   }
-  .hidden_video{
+  .hidden_video {
     display: none;
   }
-  .content{
+  .content {
     position: relative;
     font-size: $FontSize;
-    color:#fff;
+    color: #fff;
     height: 100%;
   }
   //头部
-  header{
-    height:pxToRem(350px);
+  header {
+    height: pxToRem(350px);
     background-image: url('../img/header.png');
-    background-size:100% 100%;
+    background-size: 100% 100%;
     .header_title {
       padding-top: pxToRem(50px);
       text-align: center;
       font-size: 20px;
     }
-    }
   }
-  //主体
-  .content_box{
-    position: absolute;
-    top:pxToRem(150px);
-    left:pxToRem(30px);
-    right:pxToRem(30px);
-    .video_box{
-      position: relative;
-      height:pxToRem(500px);
-      img,video{
-        width:100%;
-        height:100%;
-      }
-      i.icon_video{
-        position: absolute;
-        top: 30%;
-        left: 50%;
-        z-index: 9;
-        margin-left: -0.5rem;
-        width: 1.2rem;
-        height: 1.2rem;
-        background-image: url("../img/icon-video.png");
-        background-size: 100% 100%;
-      }
-    }
-    .cover{
-      position: absolute;
-      top:0;
-      left:0;
+}
+
+//主体
+.content_box {
+  position: absolute;
+  top: pxToRem(150px);
+  left: pxToRem(30px);
+  right: pxToRem(30px);
+  .video_box {
+    position: relative;
+    height: pxToRem(500px);
+    img, video {
       width: 100%;
-      height:pxToRem(500px);
-      background: rgba(0,0,0,0.4);
+      height: 100%;
     }
-    .cs_list{
-      margin-top:pxToRem(40px);
-      ul>li{
-        position: relative;
-        float: left;
-        width:pxToRem(455px);
-        height:pxToRem(520px);
-        background: #fff;
-        margin-bottom: pxToRem(30px);
-        border-radius: 6px;
-        .avatar{
-          margin-top:0.5rem;
-          margin-left:1.275rem;
-          width:2rem;
-          height:2rem;
-          img{
-            width:100%;
-            height:100%;
-            -webkit-border-radius:100%;
-            -moz-border-radius:100%;
-            border-radius:100%;
-          }
-        }
-        .name{
-          position: relative;
-          margin-top:0.2rem;
-          color:#333;
-          font-weight: bold;
-          font-size:18px;
-          text-align: center;
-          em{
-            position: absolute;
-            top:-2px;
-            width:5px;
-            height:5px;
-            margin-left:2px;
-            border-radius: 100%;
-            background:#00cc82;
-          }
-        }
-        .introduce{
-          margin-top: 0.1rem;
-          color: #333;
-          font-size: 14px;
-          text-align: center;
-        }
-        .chat{
-          width: 2.3rem;
-          height: 0.9rem;
-          margin-top: 0.3rem;
-          margin-left: 1rem;
-          background: #ffd600;
-          border: none;
-          color: #fff;
-          border-radius: 5px;
-          box-shadow: 0px 3px 5px #a5a5a5;
-          font-size:16px;
-        }
-      }
-      ul li:nth-child(odd){
-        margin-right:pxToRem(30px);
-      }
+    i.icon_video {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      z-index: 9;
+      margin-left: -0.5rem;
+      width: 1.2rem;
+      height: 1.2rem;
+      background-image: url("../img/icon-video.png");
+      background-size: 100% 100%;
     }
   }
+  .cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: pxToRem(500px);
+    background: rgba(0, 0, 0, 0.4);
+  }
+  .cs_list {
+    margin-top: pxToRem(40px);
+    ul > li {
+      position: relative;
+      float: left;
+      width: pxToRem(455px);
+      height: pxToRem(520px);
+      background: #fff;
+      margin-bottom: pxToRem(30px);
+      border-radius: 6px;
+      .avatar {
+        margin-top: 0.5rem;
+        margin-left: 1.275rem;
+        width: 2rem;
+        height: 2rem;
+        img {
+          width: 100%;
+          height: 100%;
+          -webkit-border-radius: 100%;
+          -moz-border-radius: 100%;
+          border-radius: 100%;
+        }
+      }
+      .name {
+        position: relative;
+        margin-top: 0.2rem;
+        color: #333;
+        font-weight: bold;
+        font-size: 18px;
+        text-align: center;
+        em {
+          position: absolute;
+          top: -2px;
+          width: 5px;
+          height: 5px;
+          margin-left: 2px;
+          border-radius: 100%;
+          background: #00cc82;
+        }
+      }
+      .introduce {
+        margin-top: 0.1rem;
+        color: #333;
+        font-size: 14px;
+        text-align: center;
+      }
+      .chat {
+        width: 2.3rem;
+        height: 0.9rem;
+        margin-top: 0.3rem;
+        margin-left: 1rem;
+        background: #ffd600;
+        border: none;
+        color: #fff;
+        border-radius: 5px;
+        box-shadow: 0px 3px 5px #a5a5a5;
+        font-size: 16px;
+      }
+    }
+    ul li:nth-child(odd) {
+      margin-right: pxToRem(30px);
+    }
+  }
+}
 
 
 
