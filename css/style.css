@@ -130,7 +130,8 @@ body {
     .wait_content .header_avatar .cs_status {
       float: left;
       height: 2.5rem;
-      margin-top: 1rem; }
+      margin-top: 1rem;
+      color: #fff; }
       .wait_content .header_avatar .cs_status .name {
         font-size: 20px; }
       .wait_content .header_avatar .cs_status .status {
@@ -139,7 +140,8 @@ body {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 7.5rem; }
+    height: 7.5rem;
+    z-index: 99; }
     .wait_content .video_bottom img {
       position: absolute;
       left: 50%;
@@ -150,5 +152,69 @@ body {
       margin-top: 4.5rem;
       text-align: center;
       font-size: 14px; }
+  .wait_content .cs_video {
+    width: 100%;
+    height: 100%;
+    z-index: 9; }
+  .wait_content .cs_video > video {
+    position: absolute;
+    z-index: 1; }
+  .wait_content #customer_video {
+    width: 100%;
+    height: 100%; }
+  .wait_content #customer_video > video {
+    position: absolute;
+    right: 0;
+    z-index: 9;
+    width: 7rem;
+    height: 10rem; }
+
+.comment_content .comment_head {
+  width: 100%;
+  height: 7.5rem;
+  background-color: #3f98ff; }
+  .comment_content .comment_head .logo {
+    width: 2rem;
+    height: 1rem; }
+    .comment_content .comment_head .logo img {
+      width: 100%;
+      height: 100%; }
+.comment_content .comment_body {
+  width: 100%;
+  height: 5.3rem; }
+  .comment_content .comment_body .comment_form {
+    position: absolute;
+    left: 1rem;
+    right: 1rem;
+    height: 70%;
+    margin-top: 1rem;
+    padding: 0 0.8rem;
+    border-radius: 15px;
+    background-color: #fff; }
+    .comment_content .comment_body .comment_form form {
+      margin: 2rem 0.5rem; }
+      .comment_content .comment_body .comment_form form input, .comment_content .comment_body .comment_form form textarea {
+        border: 1px solid #ddd;
+        box-shadow: 5px 3px 5px 0px #ddd; }
+      .comment_content .comment_body .comment_form form .submit {
+        width: 2.2rem;
+        height: 2.2rem; }
+        .comment_content .comment_body .comment_form form .submit img {
+          width: 100%;
+          height: 100%;
+          margin-left: 0.3rem;
+          margin-top: 0.4rem; }
+
+.success_content {
+  width: 100%; }
+  .success_content .success-icon {
+    margin-top: 2rem;
+    height: 6rem;
+    background: #fff; }
+    .success_content .success-icon img {
+      width: 5.5rem;
+      height: 5.5rem;
+      vertical-align: middle;
+      margin-left: 50%; }
 
 /*# sourceMappingURL=style.css.map */

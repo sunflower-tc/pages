@@ -3,8 +3,6 @@
  * Created by sunflower on 2017/5/17.
  */
 //播放视频
-
-
 var coverOthers=$('#poster,.icon_video,.cover');
 myVideo=document.getElementById("adv_video");
 var currentTime,total;
@@ -39,8 +37,9 @@ function pause(){
     myVideo.pause();
 
 }
+//获取总时长
 myVideo.addEventListener("loadedmetadata", function(){
-    total = myVideo.duration;//获取总时长
+    total = myVideo.duration;
 });
 
 //播放时间点更新时
@@ -109,4 +108,21 @@ function myMessageHandler(e){
 }
 function  myCloseHandler(e){
     console.log("On close event has been called: " ,e);
+}
+
+
+//wait-video page
+
+//Hang up Handler
+function hangUp(){
+    console.log('come in hangup');
+    window.location.href="comments.html"
+}
+//comments page
+
+//form submit
+
+function submitForm(){
+    console.log('come in hangup');
+    window.location.href="success-submit.html"
 }

@@ -12,22 +12,24 @@
 </head>
 <body>
 <div class="wait_content">
-    <div class="header_avatar">
-        <div class="cs_avatar">
-            <img src="./img/avatar.jpg" alt="">
-        </div>
-        <div class="cs_status">
-            <p class="name">Jessia</p>
-            <p class="status">正在等待对方接受邀请...</p>
-        </div>
-    </div>
+    <!--<div class="header_avatar">-->
+        <!--<div class="cs_avatar">-->
+            <!--<img src="./img/avatar.jpg" alt="">-->
+        <!--</div>-->
+        <!--<div class="cs_status">-->
+            <!--<p class="name">Jessia</p>-->
+            <!--<p class="status">正在等待对方接受邀请...</p>-->
+        <!--</div>-->
+    <!--</div>-->
     <div class="video_bottom">
-        <img src="./img/icon-hangup.png" alt="">
+        <img src="./img/icon-hangup.png" alt="" onclick="hangUp()">
         <p class="cancel">取消</p>
     </div>
+    <div id="customer_video"></div>
 </div>
 </body>
 <script type="text/javascript" src="./js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="./js/realtimecat-0.4.0.min.js"></script>
 <script type="text/javascript" src="./js/RctCat.js"></script>
+<script type="text/javascript" src="./js/index.js"></script>
 </html>

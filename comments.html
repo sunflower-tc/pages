@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>comments</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, user-scalable=no">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="comment_content">
+        <div class="comment_head">
+            <div class="logo"><img src="./img/logo.jpg" alt=""></div>
+            <p>给我留言</p>
+        </div>
+        <div class="comment_body">
+            <div class="comment_form">
+                <form action="">
+                   <div>
+                       <label for="name">姓名：</label>
+                       <input id="name" type="text"/>
+                   </div>
+                    <div>
+                        <label for="phone">电话：</label>
+                        <input id="phone" type="number"/>
+                    </div>
+                    <div class="">
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="submit">
+                        <img class="submit_btn"  src="./img/send.png" onclick="submitForm()" alt="">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="./js/index.js"></script>
+</html>
