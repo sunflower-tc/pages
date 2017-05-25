@@ -4,8 +4,9 @@
  */
 //播放视频
 var coverOthers=$('#poster,.icon_video,.cover');
-myVideo=document.getElementById("adv_video");
+var myVideo=document.getElementById("adv_video");
 var currentTime,total;
+console.log('get video_box',$('.video_box'));
 $('.video_box').click(function(e){
     console.log('click video box')
     coverOthers.css('display',"none");
@@ -13,6 +14,7 @@ $('.video_box').click(function(e){
     play();
     e.stopPropagation();
 })
+console.log('get myVideo',myVideo);
 myVideo.onclick=function(e){
     console.log('come in video')
     if(myVideo.paused){
@@ -111,18 +113,3 @@ function  myCloseHandler(e){
 }
 
 
-//wait-video page
-
-//Hang up Handler
-function hangUp(){
-    console.log('come in hangup');
-    window.location.href="comments.html"
-}
-//comments page
-
-//form submit
-
-function submitForm(){
-    console.log('come in hangup');
-    window.location.href="success-submit.html"
-}
