@@ -55,32 +55,12 @@ myVideo.addEventListener("timeupdate", function(){
 });
 
 
-//点击chat 发送websocket
- function sendWbsocket1() {
-     console.log('click send websocket');
-    var wsAddr = "ws://echo.websocket.org/";
-    var ws = new WebSocket(wsAddr);
-    ws.onopen = function () {
-        ws.send('RCtcat test websocket');
-    };
-    ws.onmessage = function (evt) {
-        console.log('get data', evt.data);
-        ws.close();
-    };
-    ws.onclose = function (evt) {
-        console.log('websocket close');
-    };
-    ws.onerror = function (evt) {
-        console.log('webscoket error');
-    };
-
- }
 var sock,
     isOnline=true;//客服是否在线
 
 function sendWbsocket() {
     window.location.href="wait-video.html";
-    sock = new SockJS('http://123.57.227.23:9080/alerm');
+    sock = new SockJS('https://api.callcloud.com.cn/alerm');
     sock.onopen = function (e) {
         console.log('open1');
         myOpenHandler(e)
@@ -93,8 +73,6 @@ function sendWbsocket() {
         console.log('close');
         myCloseHandler(e)
     };
-
-
 }
 //发送
 function myOpenHandler(e){

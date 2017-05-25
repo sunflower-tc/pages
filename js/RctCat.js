@@ -9,7 +9,7 @@
 //
 //var token_url = "https://api.realtimecat.com/v0.3/sessions/"+p2p_session+'/tokens';
 var session,stream;
-var token_url="http://api.callcloud.com.cn/callback/getTestToken";
+var token_url="https://api.callcloud.com.cn/callback/getTestToken";
 $.ajax({
     'url':token_url,
     'method':'get'
