@@ -20,6 +20,9 @@ $.ajax({
     //获取摄像头
     stream.on("accepted", function () {
         stream.play("customer_video");//当前的的video图像
+        $('#customer_video>video').attr('x5-video-player-type','h5');
+        $('#customer_video>video').attr('webkit-playsinline','true');
+        $('#customer_video>video').attr('playsinline','true');
         session = new RTCat.Session(token);
         session.on("connected", function () {
             session.on('remote', function (receiver) {

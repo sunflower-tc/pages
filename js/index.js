@@ -6,30 +6,29 @@
 var coverOthers=$('#poster,.icon_video,.cover');
 var myVideo=document.getElementById("adv_video");
 var currentTime,total;
-console.log('get video_box',$('.video_box'));
-$('.video_box').click(function(e){
-    console.log('click video box')
+$(".video_box").click(function(e){
+    console.log('click video box');
     coverOthers.css('display',"none");
     myVideo.style.display="block";
     play();
     e.stopPropagation();
-})
-console.log('get myVideo',myVideo);
+});
+
 myVideo.onclick=function(e){
-    console.log('come in video')
+    console.log('come in video');
     if(myVideo.paused){
-        console.log('pause in video')
+        console.log('pause in video');
         play();
     }else{
-        console.log('play in video')
+        console.log('play in video');
         pause();
     }
     e.stopPropagation();
-}
+};
 //播放
 function play(){
     myVideo.play();
-}
+};
 
 //暂停
 function pause(){
@@ -83,6 +82,8 @@ function myMessageHandler(e){
     console.log('message', e.data);
     if(isOnline){
         window.location.href="wait-video.html";
+    }else{
+        alert('客服不再线')
     }
     sock.close();
 }

@@ -4,24 +4,28 @@
   src: url("../PingFang ExtraLight.ttf");
   font-weight: normal;
   font-style: normal; }
-body {
+html, body {
+  width: 100%;
+  height: 100%;
   font-family: 'pingfang';
   background: #f0eff6;
   color: #333; }
-  body .show_video {
+  html input, html textarea:focus, body input, body textarea:focus {
+    outline: none; }
+  html .show_video, body .show_video {
     display: block; }
-  body .hidden_video {
+  html .hidden_video, body .hidden_video {
     display: none; }
-  body .content {
+  html .content, body .content {
     position: relative;
     font-size: 12px;
     color: #fff;
     height: 100%; }
-  body header {
+  html header, body header {
     height: 3.5rem;
     background-image: url("../img/header.png");
     background-size: 100% 100%; }
-    body header .header_title {
+    html header .header_title, body header .header_title {
       padding-top: 0.5rem;
       text-align: center;
       font-size: 20px; }
@@ -161,49 +165,93 @@ body {
     z-index: 1; }
   .wait_content #customer_video {
     width: 100%;
-    height: 100%; }
-  .wait_content #customer_video > video {
+    height: 100%;
     position: absolute;
-    right: 0;
+    left: 0;
+    top: 0;
     z-index: 9;
-    width: 7rem;
-    height: 10rem; }
+    overflow: hidden; }
+  .wait_content #customer_video > video {
+    width: 100%;
+    height: 100%; }
 
-.comment_content .comment_head {
+.comment_content {
+  position: relative;
   width: 100%;
-  height: 7.5rem;
-  background-color: #3f98ff; }
-  .comment_content .comment_head .logo {
-    width: 2rem;
-    height: 1rem; }
-    .comment_content .comment_head .logo img {
-      width: 100%;
-      height: 100%; }
-.comment_content .comment_body {
-  width: 100%;
-  height: 5.3rem; }
-  .comment_content .comment_body .comment_form {
+  height: 100%;
+  overflow: hidden;
+  font-family: 'pingfang'; }
+  .comment_content .comment_background {
     position: absolute;
-    left: 1rem;
-    right: 1rem;
-    height: 70%;
-    margin-top: 1rem;
-    padding: 0 0.8rem;
-    border-radius: 15px;
-    background-color: #fff; }
-    .comment_content .comment_body .comment_form form {
-      margin: 2rem 0.5rem; }
-      .comment_content .comment_body .comment_form form input, .comment_content .comment_body .comment_form form textarea {
-        border: 1px solid #ddd;
-        box-shadow: 5px 3px 5px 0px #ddd; }
-      .comment_content .comment_body .comment_form form .submit {
-        width: 2.2rem;
-        height: 2.2rem; }
-        .comment_content .comment_body .comment_form form .submit img {
-          width: 100%;
-          height: 100%;
-          margin-left: 0.3rem;
-          margin-top: 0.4rem; }
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../img/bg.png");
+    background-size: 100%; }
+    .comment_content .comment_background .pass {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      width: 3rem;
+      height: 1.5rem;
+      line-height: 1.5rem;
+      border-radius: 2rem;
+      color: #e6e8ea;
+      text-align: center;
+      border: 1px solid #757779; }
+    .comment_content .comment_background .copy_right {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      left: 0;
+      bottom: 10px;
+      font-size: 12px;
+      color: #fff;
+      opacity: .5;
+      text-align: center;
+      font-family: 'pingfang'; }
+  .comment_content .comment_body {
+    position: relative;
+    width: 100%;
+    top: 10%; }
+    .comment_content .comment_body img {
+      display: block;
+      width: 4rem;
+      height: 4rem;
+      border-radius: 100%;
+      margin: 0 auto 25px; }
+    .comment_content .comment_body form {
+      position: relative;
+      box-sizing: border-box;
+      border-radius: 5px;
+      padding: 25px;
+      margin: 0 auto;
+      background-color: #fff;
+      width: 18rem;
+      height: 24rem; }
+      .comment_content .comment_body form .forminput {
+        height: 35px;
+        line-height: 35px;
+        border-radius: 5px;
+        position: relative;
+        display: block;
+        font-size: 14px;
+        width: 100%; }
+      .comment_content .comment_body form .bottom10 {
+        margin-bottom: 1rem; }
+      .comment_content .comment_body form .forminput .input-normal {
+        float: right;
+        border-radius: 5px;
+        box-sizing: border-box;
+        border: 1px solid transparent;
+        padding: 5px 10px;
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        color: #1a1a1a;
+        background-color: #f5f7fa; }
+      .comment_content .comment_body form .gray {
+        background-color: #f5f7fa; }
 
 .success_content {
   width: 100%; }
