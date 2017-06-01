@@ -11,7 +11,6 @@ function hangUp(){
 //comments page
 
 //form submit
-
 function submitForm(){
     console.log('come in hangup');
     window.location.href="success-submit.html"
