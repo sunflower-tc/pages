@@ -10,7 +10,6 @@ $FontColor:#333;
 @font-face {
   font-family: 'pingfang';
   src: url('../PingFang ExtraLight.ttf');
-  font-weight: normal;
   font-style: normal;
 }
 
@@ -18,9 +17,10 @@ html,body {
   width:100%;
   height:100%;
   font-family: 'pingfang';
+    font-weight: 200;
   background: $bodyColor;
   color:$FontColor;
-  input,textarea:focus {outline: none;}
+  input,textarea,button:focus {outline: none;}
   .show_video {
     display: block;
   }
@@ -232,6 +232,7 @@ html,body {
   height:100%;
   overflow: hidden;
   font-family: 'pingfang';
+  font-weight: 200;
   background: url('../img/bg.png');
   background-size: 100%;
   .comment_background{
@@ -284,7 +285,7 @@ html,body {
       margin: 0 auto;
       background-color: #fff;
       width:pxToRem(1800px);
-      height:pxToRem(2400px);;
+      height:pxToRem(2400px);
       .forminput{
         height: 35px;
         line-height: 35px;
@@ -307,13 +308,26 @@ html,body {
           height: 100%;
           width: 100%;
           color: #1a1a1a;
+          font-weight: 200;
           background-color: #f5f7fa;
         }
-
+          .forminput>i{
+            position: absolute;
+            top:0;
+            right:10px;
+            color:red;
+          }
       .gray{
           background-color: #f5f7fa;
       }
-
+      .input-shadow{
+          box-shadow: 0px 5px 5px #9c9c9c;
+      }
+      .red-info{
+        background-color: #ffe5e5!important;
+        border-color: #ff8080!important;
+        color: red!important;
+      }
     }
   }
 }
@@ -323,11 +337,11 @@ html,body {
   width:100%;
   .success-icon{
     margin-top:pxToRem(500px);
-    height:pxToRem(600px);
+    height:pxToRem(550px);
     text-align:center;
     img{
-      width:pxToRem(600px);
-      height: pxToRem(600px);
+      width:pxToRem(500px);
+      height: pxToRem(500px);
       vertical-align:middle;
     }
   }
@@ -335,7 +349,9 @@ html,body {
     padding: pxToRem(30px);
     text-align: center;
     font-size:14px;
+    font-weight: 300;
     color:#b4b2b9;
+
   }
   .success_submit{
     margin:pxToRem(100px) pxToRem(50px) 0 pxToRem(50px);
@@ -348,10 +364,12 @@ html,body {
       height:100%;
       color:#fff;
       font-size:16px;
+      font-weight: 200;
       border:none;
       letter-spacing: 20px;
       background-color: #007bc8;
       border-radius: 8px;
+
     }
   }
 
