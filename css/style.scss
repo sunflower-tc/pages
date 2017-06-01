@@ -243,10 +243,10 @@ html,body {
       position: absolute;
       top: 15px;
       right: 15px;
-      width: 3rem;
-      height: 1.5rem;
-      line-height: 1.5rem;
-      border-radius: 2rem;
+      width: pxToRem(300px);
+      height: pxToRem(150px);
+      line-height: pxToRem(150px);
+      border-radius: pxToRem(200px);
       color: #e6e8ea;
       text-align: center;
       border: 1px solid #757779;
@@ -271,20 +271,20 @@ html,body {
     top: 10%;
     img{
       display: block;
-      width: 4rem;
-      height: 4rem;
+      width: pxToRem(400px);
+      height: pxToRem(400px);
       border-radius: 100%;
-      margin: 0 auto 25px;
+      margin: 0 auto pxToRem(150px);
     }
     form{
       position: relative;
       box-sizing: border-box;
       border-radius: 5px;
-      padding: 25px;
+      padding: pxToRem(110px);
       margin: 0 auto;
       background-color: #fff;
-      width: 18rem;
-      height:24rem;
+      width:pxToRem(1800px);
+      height:pxToRem(2400px);;
       .forminput{
         height: 35px;
         line-height: 35px;
