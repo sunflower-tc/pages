@@ -15,14 +15,19 @@ $.ajax({
     'method':'get'
 }).done(function(msg){
     var token = msg;
+    var width = "100%";
+    var height = "75%";
+
     console.log('get token',token);
-    stream = new RTCat.Stream();
+    stream = new RTCat.Stream({size:{maxWidth:1600,maxHeight:1200}});
     //获取摄像头
     stream.on("accepted", function () {
-        stream.play("customer_video");//当前的的video图像
-        $('#customer_video>video').attr('x5-video-player-type','h5');
-        $('#customer_video>video').attr('webkit-playsinline','true');
-        $('#customer_video>video').attr('playsinline','true');
+        stream.play("customer_video",{size:{width:100,height:75}});//当前的的video图像
+        stream.mirror();//反转视频
+        //$('#customer_video>video').attr('x5-video-player-type','h5');
+        //$('#customer_video>video').attr('x5-video-player-fullscree','true');
+        //$('#customer_video>video').attr('webkit-playsinline','true');
+        //$('#customer_video>video').attr('playsinline','true');
         session = new RTCat.Session(token);
         session.on("connected", function () {
             session.on('remote', function (receiver) {
@@ -33,7 +38,9 @@ $.ajax({
                     div.setAttribute('id','video-'+receiver.getId());
                     div.setAttribute('class','cs_video');
                     document.querySelector('.wait_content').appendChild(div);
-                    stream.play('video-'+receiver.getId());
+                    stream.play('video-'+receiver.getId(),{size:{width:width,height:height}});
+                    stream.mirror();//反转视频
+
                 });
             }).on('in', function (token) {
                 // 建立连接成功后,发送 stream

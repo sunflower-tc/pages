@@ -148,6 +148,7 @@ html,body {
 .wait_content{
   width:100%;
   height:100%;
+  background-image: url("../img/bg.png");
   .header_avatar{
       position: absolute;
       top:0;
@@ -195,32 +196,28 @@ html,body {
       margin-top:pxToRem(450px);
       text-align: center;
       font-size:14px;
+      color:#fff;
     }
 
   }
-
+//大
   .cs_video{
-
-    width:100%;
-    height:100%;
-    z-index:9;
+    position: absolute;
+    top: 9rem;
+    width: 100%;
+    z-index: 9;
   }
   .cs_video>video{
-    position: absolute;
-    z-index:1;
+
   }
+  //小
   #customer_video{
-    width: 100%;
-    height: 100%;
     position: absolute;
-    left: 0;
-    top: 0;
-    z-index:9;
+    right: 0;
+    top: 9rem;
+    z-index:10;
+    height:100%;
     overflow: hidden;
-  }
-  #customer_video>video{
-    width:100%;
-    height: 100%;
   }
 }
 

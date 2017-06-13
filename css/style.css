@@ -115,7 +115,8 @@ html, body {
 
 .wait_content {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  background-image: url("../img/bg.png"); }
   .wait_content .header_avatar {
     position: absolute;
     top: 0;
@@ -155,25 +156,20 @@ html, body {
     .wait_content .video_bottom .cancel {
       margin-top: 4.5rem;
       text-align: center;
-      font-size: 14px; }
+      font-size: 14px;
+      color: #fff; }
   .wait_content .cs_video {
+    position: absolute;
+    top: 9rem;
     width: 100%;
-    height: 100%;
     z-index: 9; }
-  .wait_content .cs_video > video {
-    position: absolute;
-    z-index: 1; }
   .wait_content #customer_video {
-    width: 100%;
-    height: 100%;
     position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 9;
+    right: 0;
+    top: 9rem;
+    z-index: 10;
+    height: 100%;
     overflow: hidden; }
-  .wait_content #customer_video > video {
-    width: 100%;
-    height: 100%; }
 
 .comment_content {
   position: relative;

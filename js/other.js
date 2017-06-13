@@ -84,5 +84,5 @@ function pass(){
 }
 function callBack_index(){
     console.log('come in hangup');
-    window.location.href="index.html"
+    window.location.href="main.html"
 }
