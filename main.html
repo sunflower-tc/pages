@@ -11,44 +11,50 @@
 </head>
 <body>
 <div class="content">
-    <header>
+    <!-- <header>
         <p class="header_title">Customer List</p>
-    </header>
+    </header> -->
     <div class="content_box">
         <div class="video_box">
-            <img id="poster" src="./img/img1.png" alt="">
+            <img id="poster" src="./img/back.jpg" alt="">
             <i class="icon_video"></i>
             <div class="cover"></div>
             <!--video 有poster属性可作为视频封面，不美观不好调整 这边用img代替-->
-            <video id="adv_video" class="video_position"  style="display: none" width="100%" height="100%">
-                <source src="http://www.w3cschool.cc/try/demo_source/mov_bbb.mp4">
+            <video id="adv_video" class="video_position" x-webkit-airplay="true" webkit-playsinline="true" playsinline preload="none" style="display: none" width="100%" height="100%">
+                <!--<source src="http://www.w3cschool.cc/try/demo_source/mov_bbb.mp4">-->
+                <source src="http://callclout-test.oss-cn-shanghai.aliyuncs.com/video.mp4">
+
             </video>
         </div>
         <div class="cs_list">
             <ul>
-                <li>
-                    <div class="avatar"><img src="./img/avatar.jpg" alt=""></div>
+                <li onclick="sendWbsocket()">
+                    <div class="avatar"><img src="./img/avatar.jpg" alt="">
+                    <em></em>
+                  </div>
                     <div class="name">Jessia<em></em></div>
-                    <p class="introduce">She is a pretty girl.</p>
-                    <button class="chat" onclick="sendWbsocket()">Chat</button>
+                    <!-- <p class="introduce">She is a pretty girl.</p> -->
+                    <!-- <button class="chat" onclick="sendWbsocket()">Chat</button> -->
                 </li>
                 <li>
                     <div class="avatar"><img src="./img/avatar1.jpg" alt=""></div>
                     <div class="name">Jessia<em></em></div>
-                    <p class="introduce">She is a pretty girl.</p>
-                    <button class="chat">Chat</button>
                 </li>
                 <li>
-                    <div class="avatar"><img src="./img/avatar2.jpg" alt=""></div>
+                    <div class="avatar"><img src="./img/avatar1.jpg" alt=""></div>
                     <div class="name">Jessia<em></em></div>
-                    <p class="introduce">She is a pretty girl.</p>
-                    <button class="chat">Chat</button>
                 </li>
                 <li>
-                    <div class="avatar"><img src="./img/avatar4.jpg" alt=""></div>
+                    <div class="avatar"><img src="./img/avatar1.jpg" alt=""></div>
                     <div class="name">Jessia<em></em></div>
-                    <p class="introduce">She is a pretty girl.</p>
-                    <button class="chat">Chat</button>
+                </li>
+                <li>
+                    <div class="avatar"><img src="./img/avatar1.jpg" alt=""></div>
+                    <div class="name">Jessia<em></em></div>
+                </li>
+                <li>
+                    <div class="avatar"><img src="./img/avatar1.jpg" alt=""></div>
+                    <div class="name">Jessia<em></em></div>
                 </li>
 
             </ul>
