@@ -12,15 +12,23 @@ $FontColor:#333;
   src: url('../PingFang ExtraLight.ttf');
   font-style: normal;
 }
-
 html,body {
   width:100%;
-  height:100%;
   font-family: 'pingfang';
     font-weight: 200;
   background: $bodyColor;
   color:$FontColor;
   input,textarea,button:focus {outline: none;}
+  .gray {
+      -webkit-filter: grayscale(100%);
+      -moz-filter: grayscale(100%);
+      -ms-filter: grayscale(100%);
+      -o-filter: grayscale(100%);
+
+      filter: grayscale(100%);
+
+      filter: gray;
+  }
   .show_video {
     display: block;
   }
@@ -31,7 +39,7 @@ html,body {
     position: relative;
     font-size: $FontSize;
     color: #fff;
-    height: 100%;
+    background:#405165;
   }
   //头部
   header {
@@ -48,10 +56,7 @@ html,body {
 
 //主体
 .content_box {
-  position: absolute;
-  top: pxToRem(30px);
-  left: pxToRem(30px);
-  right: pxToRem(30px);
+  margin:0 0.3rem;
   .video_box {
     position: relative;
     height: pxToRem(500px);
@@ -81,6 +86,7 @@ html,body {
   }
   .cs_list {
     margin-top: pxToRem(40px);
+    overflow: hidden;
     ul > li {
       position: relative;
       float: left;
@@ -91,7 +97,7 @@ html,body {
       .avatar {
         position: relative;
         margin-top: 0.5rem;
-        margin-left: 1.275rem;
+        margin-left: 0.75rem;
         width: 3rem;
         height: 3rem;
         img {
@@ -114,7 +120,7 @@ html,body {
       .name {
         position: relative;
         margin-top: 0.2rem;
-        color: #333;
+        color: #fff;
         font-weight: bold;
         font-size: 18px;
         text-align: center;
