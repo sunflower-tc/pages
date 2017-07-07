@@ -39,7 +39,6 @@ html,body {
     position: relative;
     font-size: $FontSize;
     color: #fff;
-    background:#405165;
   }
   //头部
   header {
@@ -84,8 +83,14 @@ html,body {
     background: rgba(0, 0, 0, 0.4);
   }
   .cs_list {
-    margin: 0.4rem 0.3rem 0 0.3rem;
+    margin-top:0.1rem;
     overflow: hidden;
+    background-color:#405165 ;
+    ul{
+      overflow: hidden;
+      margin:0 0.3rem;
+
+    }
     ul > li {
       position: relative;
       float: left;
