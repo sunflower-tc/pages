@@ -25,10 +25,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="comments.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="comments.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/comments.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
+            <state relative-caret-position="186">
               <caret line="13" column="36" lean-forward="false" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="36" />
               <folding />
             </state>
@@ -67,11 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="85" column="18" lean-forward="false" selection-start-line="85" selection-start-column="18" selection-end-line="85" selection-end-column="18" />
+            <state relative-caret-position="186">
+              <caret line="326" column="14" lean-forward="true" selection-start-line="326" selection-start-column="7" selection-end-line="326" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -120,6 +120,11 @@
         <option value="HTML File" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>gray</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -306,12 +311,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1495178934036</updated>
-      <workItem from="1499393723538" duration="891000" />
+      <workItem from="1499393723538" duration="1132000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="891000" />
+    <option name="totallyTimeSpent" value="1132000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="705" extended-state="6" />
@@ -766,18 +771,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/comments.html">
+    <entry file="file://$PROJECT_DIR$/css/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="13" column="36" lean-forward="false" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="36" />
+        <state relative-caret-position="186">
+          <caret line="326" column="14" lean-forward="true" selection-start-line="326" selection-start-column="7" selection-end-line="326" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.scss">
+    <entry file="file://$PROJECT_DIR$/comments.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="85" column="18" lean-forward="false" selection-start-line="85" selection-start-column="18" selection-end-line="85" selection-end-column="18" />
+        <state relative-caret-position="186">
+          <caret line="13" column="36" lean-forward="false" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="36" />
           <folding />
         </state>
       </provider>
