@@ -55,6 +55,7 @@ html,body {
 
 //主体
 .content_box {
+      background-color:#405165 ;
   .video_box {
     position: relative;
     height: pxToRem(500px);
@@ -85,7 +86,6 @@ html,body {
   .cs_list {
     margin-top:0.1rem;
     overflow: hidden;
-    background-color:#405165 ;
     ul{
       overflow: hidden;
       margin:0 0.3rem;
